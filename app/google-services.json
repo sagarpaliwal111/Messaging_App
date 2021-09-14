@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "235915688913",
-    "project_id": "my-project-1621258338015",
-    "storage_bucket": "my-project-1621258338015.appspot.com"
+    "project_number": "565908713636",
+    "project_id": "messaging-app-67dcb",
+    "storage_bucket": "messaging-app-67dcb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:235915688913:android:00b716ab15770b5de17ef0",
+        "mobilesdk_app_id": "1:565908713636:android:be9cd9ffb822a2d893f631",
         "android_client_info": {
           "package_name": "com.example.messagingapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "235915688913-2qpf4t8s45tpms3ab799ct82tsag8kjr.apps.googleusercontent.com",
+          "client_id": "565908713636-q6or7r4t9g6c5glq2ue5ktpnel5hu9sd.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.messagingapp",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "235915688913-u0u4bhi76mus7ebduiebi23oi5s1a4m2.apps.googleusercontent.com",
+          "client_id": "565908713636-6drte4o0ssedrd0deul65u86se6i6g6i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAe_WnJmLIpf7qW-iWKMW56ObJPADWA3_I"
+          "current_key": "AIzaSyBiQpjv5IokB42KneUmZH13SV-_YhYQqqc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "235915688913-q5r2tm3ucr7k3l7093pu8kric8304nqi.apps.googleusercontent.com",
+              "client_id": "565908713636-6drte4o0ssedrd0deul65u86se6i6g6i.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

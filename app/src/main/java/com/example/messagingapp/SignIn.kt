@@ -1,11 +1,11 @@
 package com.example.messagingapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
 import com.example.messagingapp.Dao.UserDao
 import com.example.messagingapp.models.User
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -73,15 +73,10 @@ class SignIn : AppCompatActivity() {
     }
 
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
-        try {
-            val account =
-                completedTask.getResult(ApiException::class.java)!!
-            Log.d(TAG, "firebaseAuthWithGoogle:" + account.id)
-            firebaseAuthWithGoogle(account.idToken!!)
-        } catch (e: ApiException) {
-            Log.w(TAG, "signInResult:failed code=" + e.statusCode)
-
-        }
+        val account =
+            completedTask.getResult(ApiException::class.java)!!
+        Log.d(TAG, "firebaseAuthWithGoogle:" + account.id)
+        firebaseAuthWithGoogle(account.idToken!!)
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {

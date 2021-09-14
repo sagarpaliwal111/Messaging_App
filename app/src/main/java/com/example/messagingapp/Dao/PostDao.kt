@@ -1,5 +1,6 @@
 package com.example.messagingapp.Dao
 
+import android.util.Log
 import com.example.messagingapp.models.Post
 import com.example.messagingapp.models.User
 import com.google.android.gms.tasks.Task
@@ -20,13 +21,17 @@ class PostDao {
 
     fun addPost(text: String) {
         GlobalScope.launch {
-            val currentUserId = auth.currentUser!!.uid
+            try {
+                val currentUserId = auth.currentUser!!.uid
 
-            val userDao = UserDao()
-            val user = userDao.getUserById(currentUserId).await().toObject(User::class.java)!!
-            val currentTime = System.currentTimeMillis()
-            val post = Post(text, user, currentTime)
-            postCollection.document().set(post)
+                val userDao = UserDao()
+                val user = userDao.getUserById(currentUserId).await().toObject(User::class.java)!!
+                val currentTime = System.currentTimeMillis()
+                val post = Post(text, user, currentTime)
+                postCollection.document().set(post)
+            } catch (e: Exception) {
+                Log.i("uman","${e.message}")
+            }
 
 
         }
